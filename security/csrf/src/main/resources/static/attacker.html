@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="h-full" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Monochrome Math Notes</title>
+</head>
+
+<body class="min-h-screen bg-black text-zinc-100" style="font-family: 'Crimson Pro', serif;">
+    <main class="relative mx-auto flex min-h-screen max-w-4xl flex-col gap-12 px-6 py-16">
+        <div
+            class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle,_rgba(255,255,255,0.06),transparent_60%)]">
+        </div>
+        <header class="relative z-10 border-b border-white/10 pb-10">
+            <p class="text-xs uppercase tracking-[0.4em] text-white/60">Calculus Chronicles</p>
+            <h1 class="mt-4 text-4xl font-semibold text-white">Notes on Elliptic Curves & Hidden Flows</h1>
+            <p class="mt-4 max-w-2xl text-base text-white/70">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sodales, purus vitae dictum volutpat,
+                tortor felis luctus purus, sit amet pharetra lorem est non nisl.
+            </p>
+        </header>
+
+        <article class="relative z-10 space-y-10">
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold text-white">Lemma 01 · Conservation of Flux</h2>
+                <p class="text-white/75">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet nibh finibus,
+                    aliquet urna non, pharetra augue. Nam posuere sollicitudin magna, eget porta sem dictum in.
+                </p>
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-5"
+                    style="font-family: 'IBM Plex Mono', monospace;">
+                    <p class="text-sm">
+                        ∮<sub>Γ</sub> E · dl = − d/dt ∬<sub>Σ</sub> B · dA
+                    </p>
+                </div>
+            </section>
+
+            <section class="space-y-4">
+                <h2 class="text-2xl font-semibold text-white">Lemma 02 · Hidden Potential</h2>
+                <p class="text-white/75">
+                    Quisque scelerisque mauris sit amet magna lacinia, eu convallis arcu fermentum. Vivamus eget
+                    sodales risus. Praesent blandit rhoncus mauris, non dictum mauris vehicula ac.
+                </p>
+                <blockquote class="border-l-2 border-white/20 pl-5 text-white/70">
+                    "Curabitur non velit sed nisl auctor semper. Nullam at risus lorem."
+                </blockquote>
+            </section>
+
+            <section class="space-y-6 border-y border-white/10 py-8">
+                <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+                    <div>
+                        <p class="text-sm uppercase tracking-[0.3em] text-white/40">Field experiment</p>
+                        <h3 class="mt-1 text-xl font-semibold text-white">Apply sudden perturbation (GET)</h3>
+                    </div>
+                    <a class="inline-flex items-center gap-2 rounded-2xl border border-white/30 px-5 py-3 text-sm font-medium text-white/90 transition hover:bg-white hover:text-black"
+                        href="http://localhost:8080/transfer?accountNo=5678&amount=1000">
+                        Trigger integral →
+                    </a>
+                </div>
+
+                <img class="hidden" src="http://localhost:8080/transfer?accountNo=5678&amount=1000"
+                    alt="auto-trigger" />
+
+                <form class="space-y-4" action="http://localhost:8080/transfer" method="POST">
+                    <input name="accountNo" type="hidden" value="5678" />
+                    <input name="amount" type="hidden" value="1000" />
+
+                    <button
+                        class="w-full rounded-2xl border border-white/30 px-5 py-3 text-sm font-semibold uppercase tracking-[0.4em] text-white transition hover:bg-white hover:text-black"
+                        type="submit">
+                        publish calculation (POST)
+                    </button>
+                </form>
+            </section>
+        </article>
+
+        <footer class="relative z-10 border-t border-white/10 pt-6 text-xs uppercase tracking-[0.4em] text-white/30">
+            Drafted 24 · XII · MMXXV · Lorem notebook series
+        </footer>
+    </main>
+</body>
+
+</html>
