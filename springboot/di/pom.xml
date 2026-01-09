@@ -27,4 +27,42 @@
             <version>3.0.0-beta3</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>tech.pp.Main</mainClass>
+                    <systemProperties>
+                        <systemProperty>
+                            <key>com.sun.management.jmxremote</key>
+                        </systemProperty>
+                        <systemProperty>
+                            <key>com.sun.management.jmxremote.port</key>
+                            <value>9010</value>
+                        </systemProperty>
+                        <systemProperty>
+                            <key>com.sun.management.jmxremote.rmi.port</key>
+                            <value>9010</value>
+                        </systemProperty>
+                        <systemProperty>
+                            <key>com.sun.management.jmxremote.authenticate</key>
+                            <value>false</value>
+                        </systemProperty>
+                        <systemProperty>
+                            <key>com.sun.management.jmxremote.ssl</key>
+                            <value>false</value>
+                        </systemProperty>
+                        <systemProperty>
+                            <key>java.rmi.server.hostname</key>
+                            <value>localhost</value>
+                        </systemProperty>
+                    </systemProperties>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
